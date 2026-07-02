@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>To-Do Web App</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+
+    <header>
+
+        <h1><i class="fa-solid fa-list-check"></i> To-Do Web App</h1>
+
+        <button id="themeBtn">
+            🌙 Dark Mode
+        </button>
+
+    </header>
+
+    <!-- Add Task -->
+
+    <div class="task-form">
+
+        <input
+            type="text"
+            id="taskInput"
+            placeholder="Enter Task">
+
+        <textarea
+            id="taskDescription"
+            placeholder="Task Description"></textarea>
+
+        <div class="row">
+
+            <select id="priority">
+
+                <option>High</option>
+
+                <option selected>Medium</option>
+
+                <option>Low</option>
+
+            </select>
+
+            <input
+                type="date"
+                id="taskDate">
+
+            <input
+                type="time"
+                id="taskTime">
+
+        </div>
+
+        <button id="addTaskBtn">
+
+            <i class="fa-solid fa-plus"></i>
+
+            Add Task
+
+        </button>
+
+    </div>
+
+    <!-- Search -->
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search Task...">
+
+    <!-- Filter Buttons -->
+
+    <div class="filters">
+
+        <button id="allBtn">All</button>
+
+        <button id="pendingBtn">Pending</button>
+
+        <button id="completedBtn">Completed</button>
+
+        <button id="highBtn">High Priority</button>
+
+    </div>
+
+    <!-- Dashboard -->
+
+    <div class="dashboard">
+
+        <div class="box">
+
+            <h2 id="totalTasks">0</h2>
+
+            <p>Total</p>
+
+        </div>
+
+        <div class="box">
+
+            <h2 id="completedTasks">0</h2>
+
+            <p>Completed</p>
+
+        </div>
+
+        <div class="box">
+
+            <h2 id="pendingTasks">0</h2>
+
+            <p>Pending</p>
+
+        </div>
+
+    </div>
+
+    <!-- Task List -->
+
+    <div id="taskList">
+
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+
+        <button id="clearCompleted">
+
+            Clear Completed
+
+        </button>
+
+        <button id="deleteAll">
+
+            Delete All
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
